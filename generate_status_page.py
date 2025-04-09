@@ -3,7 +3,7 @@ import socket
 from datetime import datetime
 from ping3 import ping
 
-ping3.EXCEPTIONS = True
+ping.EXCEPTIONS = True
 
 API_URL = "https://api.brandmeister.network/v2/master"
 TCP_PORT = 50180
