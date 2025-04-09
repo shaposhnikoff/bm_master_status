@@ -31,7 +31,7 @@ def check_icmp(host):
     try:
         response_time = ping(host, timeout=3)  # Ping timeout of 3 seconds
         return response_time is not None
-    except exceptions.PingError:
+    except ping.PingError:
         return False
 
 def main():
