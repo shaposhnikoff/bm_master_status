@@ -25,7 +25,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Generate index.html
-        run: python generate_status_page.py
+        run: sudo python generate_status_page.py
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
