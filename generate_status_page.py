@@ -32,7 +32,7 @@ def main():
 
     html = "<html><head><title>BrandMeister Server Status</title></head><body>"
     html += f"<h1>BrandMeister master status</h1>"
-    html += f"<p>Обновлено: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</p>"
+    html += f"<p>Updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</p>"
     html += "<table border='1' cellpadding='5' cellspacing='0'>"
     html += f"<tr><th>ID</th><th>Страна</th><th>Адрес</th><th>TCP {TCP_PORT}</th><th>HTTP</th></tr>"
 
