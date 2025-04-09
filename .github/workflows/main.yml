@@ -2,8 +2,11 @@ name: Generate BrandMeister Server Status
 
 on:
   schedule:
-    - cron: '*/5 * * * *' 
+    - cron: '0 0 * * *' 
   workflow_dispatch:    
+  push: 
+    branches:
+      - main
 
 jobs:
   generate:
