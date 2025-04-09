@@ -27,11 +27,11 @@ def main():
         response.raise_for_status()
         servers = response.json()
     except Exception as e:
-        print(f"❌ Не удалось получить список серверов: {e}")
+        print(f" Не удалось получить список серверов: {e}")
         return
 
     html = "<html><head><title>BrandMeister Server Status</title></head><body>"
-    html += f"<h1>Состояние серверов BrandMeister</h1>"
+    html += f"<h1>BrandMeister master status</h1>"
     html += f"<p>Обновлено: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</p>"
     html += "<table border='1' cellpadding='5' cellspacing='0'>"
     html += f"<tr><th>ID</th><th>Страна</th><th>Адрес</th><th>TCP {TCP_PORT}</th><th>HTTP</th></tr>"
@@ -54,7 +54,7 @@ def main():
     with open("index.html", "w") as f:
         f.write(html)
 
-    print("✅ HTML-страница успешно создана: index.html")
+    print(" HTML-страница успешно создана: index.html")
 
 if __name__ == "__main__":
     main()
