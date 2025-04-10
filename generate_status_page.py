@@ -29,7 +29,7 @@ def check_http(address):
 # Check ICMP (ping)
 def check_icmp(host):
     try:
-        response_time = ping(host, timeout=3,privileged=False )  # Ping timeout of 3 seconds
+        response_time = ping(host, timeout=3)  # Ping timeout of 3 seconds
         return response_time is not None
     except ping.PingError:
         return False
