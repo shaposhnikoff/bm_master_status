@@ -16,19 +16,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
+      #- name: Set up Python
+      #  uses: actions/setup-python@v4
+      #  with:
+      #    python-version: '3.x'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      #- name: Generate index.html
-      #  run: python generate_status_page.py
-    
+        run: /home/max/PycharmProjects/venv/bin/pip3 install -r requirements.txt
         
-      - name: rrr
+      - name: Generate index.html
         run: sudo /home/max/PycharmProjects/venv/bin/python3 generate_status_page.py
 
       - name: Deploy to GitHub Pages
