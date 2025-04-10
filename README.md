@@ -1,0 +1,1 @@
+[![pages-build-deployment](https://github.com/shaposhnikoff/bm_master_status/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/shaposhnikoff/bm_master_status/actions/workflows/pages/pages-build-deployment)
